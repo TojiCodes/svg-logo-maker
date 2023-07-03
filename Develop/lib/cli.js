@@ -40,6 +40,8 @@ class CLI {
         return;
     }
 
+    logoShape.setColor(color);
+
     const logoSvg = SVG.generateLogo(color, logoShape, text);
     const filename = "logo.svg";
 

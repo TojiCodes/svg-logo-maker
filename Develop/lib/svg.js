@@ -5,9 +5,7 @@ static generateLogo(color, shape, text) {
 
     const svgContent = `
         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
-        <g transform="translate(100, 100)">
-            ${shapeMarkup}
-        </g>
+        ${shapeMarkup}
         ${textMarkup}
         </svg>
     `;
@@ -15,3 +13,5 @@ static generateLogo(color, shape, text) {
     return svgContent;
 }
 }
+
+module.exports = SVG;
